@@ -2,7 +2,6 @@
   "name": "jaehuiui-studio-website",
   "version": "1.0.0",
   "homepage": "https://studio.jaehuiui.com",
-  "type": "module",
   "private": true,
   "dependencies": {
     "@types/node": "^20.10.0",
@@ -41,20 +40,12 @@
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "author": "jaehuiui",
   "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "pnpm": "9"
+  },
   "packageManager": "pnpm@9.9.0+sha256.7a4261e50d9a44d9240baf6c9d6e10089dcf0a79d0007f2a26985a6927324177",
   "prettier": "@jaehuiui/prettier-config"
 }

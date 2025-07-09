@@ -1,19 +1,22 @@
-import path from 'path'
-
-// .eslintrc.js
 require('@jaehuiui/eslint-config/patch')
 
+const path = require('path')
+const tsconfig = path.join(process.cwd(), 'tsconfig.json')
+
 module.exports = {
-  extends: ['@jaehuiui/eslint-config'], // ['@jaehuiui/eslint-config/react']
+  extends: ['@jaehuiui/eslint-config/react'],
+  rules: {
+    '@typescript-eslint/member-ordering': 'off',
+  },
   parserOptions: {
-    project: './tsconfig.json',
-    tsconfigRootDir: path.resolve(__dirname, ''),
+    project: tsconfig,
   },
   settings: {
     'import/resolver': {
       typescript: {
-        project: './tsconfig.json',
+        project: tsconfig
       },
     },
   },
+  ignorePatterns: ['*.js', '*.cjs', '*.mjs', '*.mts'],
 }

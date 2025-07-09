@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 const Resume: React.FC = () => {
   const skills = {
     frontend: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'Next.js', 'Electron'],
     backend: ['Node.js', 'Express', 'REST APIs', 'Database Design', 'Authentication', 'Server Administration'],
     tools: ['Git', 'Docker', 'CI/CD', 'Webpack', 'Vite', 'Jest', 'ESLint', 'Prettier'],
-    design: ['UI/UX Design', 'Figma', 'Adobe Creative Suite', 'Responsive Design', 'Design Systems']
-  };
+    design: ['UI/UX Design', 'Figma', 'Adobe Creative Suite', 'Responsive Design', 'Design Systems'],
+  }
 
   const experiences = [
     {
@@ -18,8 +18,8 @@ const Resume: React.FC = () => {
         'Founded and established a software development studio specializing in desktop applications and web solutions',
         'Developed Clivy, a modern clipboard manager for macOS using Electron, React, and TypeScript',
         'Built responsive web applications with React, Next.js, and Tailwind CSS',
-        'Implemented CI/CD pipelines and automated deployment processes'
-      ]
+        'Implemented CI/CD pipelines and automated deployment processes',
+      ],
     },
     {
       company: 'Tech Company',
@@ -30,8 +30,8 @@ const Resume: React.FC = () => {
         'Led frontend development for multiple high-traffic web applications',
         'Implemented modern React patterns and TypeScript for type-safe development',
         'Mentored junior developers and established coding standards',
-        'Optimized application performance resulting in 40% faster load times'
-      ]
+        'Optimized application performance resulting in 40% faster load times',
+      ],
     },
     {
       company: 'Digital Agency',
@@ -42,10 +42,10 @@ const Resume: React.FC = () => {
         'Developed end-to-end web applications using React, Node.js, and MongoDB',
         'Created responsive designs and implemented user-friendly interfaces',
         'Collaborated with design teams to translate mockups into functional applications',
-        'Managed database design and API development'
-      ]
-    }
-  ];
+        'Managed database design and API development',
+      ],
+    },
+  ]
 
   const education = [
     {
@@ -53,30 +53,30 @@ const Resume: React.FC = () => {
       school: 'Seoul National University',
       period: '2015 - 2019',
       location: 'Seoul, South Korea',
-      description: 'Focus on Software Engineering and Human-Computer Interaction'
-    }
-  ];
+      description: 'Focus on Software Engineering and Human-Computer Interaction',
+    },
+  ]
 
   const projects = [
     {
       name: 'Clivy',
       description: 'Advanced clipboard manager for macOS with intuitive interface and powerful features',
       technologies: ['Electron', 'React', 'TypeScript', 'Tailwind CSS'],
-      link: 'https://github.com/jaehuiui/clivy'
+      link: 'https://github.com/jaehuiui/clivy',
     },
     {
       name: 'Portfolio Website',
       description: 'Personal portfolio website built with React and deployed on GitHub Pages',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-      link: 'https://github.com/jaehuiui/jaehuiui-studio'
+      link: 'https://github.com/jaehuiui/jaehuiui-studio',
     },
     {
       name: 'Task Management App',
       description: 'Full-stack task management application with real-time collaboration features',
       technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-      link: '#'
-    }
-  ];
+      link: '#',
+    },
+  ]
 
   return (
     <div className="min-h-screen bg-gray-900">
@@ -91,7 +91,7 @@ const Resume: React.FC = () => {
               Software Developer & Designer passionate about creating innovative solutions
             </p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="card">
@@ -99,19 +99,29 @@ const Resume: React.FC = () => {
                 <div className="space-y-3">
                   <div className="flex items-center">
                     <span className="text-gray-400 w-20">Email:</span>
-                    <a href="mailto:contact@jaehuiui.com" className="text-blue-400 hover:text-blue-300">
+                    <a className="text-blue-400 hover:text-blue-300" href="mailto:contact@jaehuiui.com">
                       contact@jaehuiui.com
                     </a>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-400 w-20">GitHub:</span>
-                    <a href="https://github.com/jaehuiui" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                    <a
+                      className="text-blue-400 hover:text-blue-300"
+                      href="https://github.com/jaehuiui"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       github.com/jaehuiui
                     </a>
                   </div>
                   <div className="flex items-center">
                     <span className="text-gray-400 w-20">LinkedIn:</span>
-                    <a href="https://linkedin.com/in/jaehuiui" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">
+                    <a
+                      className="text-blue-400 hover:text-blue-300"
+                      href="https://linkedin.com/in/jaehuiui"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       linkedin.com/in/jaehuiui
                     </a>
                   </div>
@@ -121,13 +131,13 @@ const Resume: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="card">
                 <h2 className="subheading text-white mb-4">Summary</h2>
                 <p className="text-gray-300 leading-relaxed">
-                  Experienced software developer with 5+ years of expertise in full-stack development, 
-                  desktop applications, and modern web technologies. Passionate about creating user-centric 
-                  solutions and building scalable applications with clean, maintainable code.
+                  Experienced software developer with 5+ years of expertise in full-stack development, desktop
+                  applications, and modern web technologies. Passionate about creating user-centric solutions and
+                  building scalable applications with clean, maintainable code.
                 </p>
               </div>
             </div>
@@ -144,45 +154,45 @@ const Resume: React.FC = () => {
               <div className="card">
                 <h3 className="subheading text-blue-400 mb-4">Frontend</h3>
                 <div className="space-y-2">
-                  {skills.frontend.map((skill) => (
+                  {skills.frontend.map(skill => (
                     <div key={skill} className="flex items-center">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-blue-400 rounded-full mr-3" />
                       <span className="text-gray-300">{skill}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              
+
               <div className="card">
                 <h3 className="subheading text-green-400 mb-4">Backend</h3>
                 <div className="space-y-2">
-                  {skills.backend.map((skill) => (
+                  {skills.backend.map(skill => (
                     <div key={skill} className="flex items-center">
-                      <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full mr-3" />
                       <span className="text-gray-300">{skill}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              
+
               <div className="card">
                 <h3 className="subheading text-purple-400 mb-4">Tools</h3>
                 <div className="space-y-2">
-                  {skills.tools.map((skill) => (
+                  {skills.tools.map(skill => (
                     <div key={skill} className="flex items-center">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-purple-400 rounded-full mr-3" />
                       <span className="text-gray-300">{skill}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              
+
               <div className="card">
                 <h3 className="subheading text-orange-400 mb-4">Design</h3>
                 <div className="space-y-2">
-                  {skills.design.map((skill) => (
+                  {skills.design.map(skill => (
                     <div key={skill} className="flex items-center">
-                      <div className="w-2 h-2 bg-orange-400 rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-orange-400 rounded-full mr-3" />
                       <span className="text-gray-300">{skill}</span>
                     </div>
                   ))}
@@ -213,7 +223,7 @@ const Resume: React.FC = () => {
                 <ul className="space-y-2">
                   {experience.description.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0" />
                       <span className="text-gray-300">{item}</span>
                     </li>
                   ))}
@@ -266,10 +276,10 @@ const Resume: React.FC = () => {
                     ))}
                   </div>
                   <a
-                    href={project.link}
                     className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
-                    target="_blank"
+                    href={project.link}
                     rel="noopener noreferrer"
+                    target="_blank"
                   >
                     View Project →
                   </a>
@@ -284,16 +294,14 @@ const Resume: React.FC = () => {
       <section className="section bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="heading text-white mb-8">Download Resume</h2>
-          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            Get a PDF version of my resume for your records.
-          </p>
-          <button className="btn bg-white text-blue-600 hover:bg-gray-100">
+          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">Get a PDF version of my resume for your records.</p>
+          <button className="btn bg-white text-blue-600 hover:bg-gray-100" type="button">
             Download PDF Resume
           </button>
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Resume; 
+export default Resume
