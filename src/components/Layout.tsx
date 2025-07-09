@@ -31,6 +31,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               >
                 Home
               </Link>
+              {/* Blog and Resume hidden from navigation but routes still available */}
+              {/* 
               <Link
                 to="/blog"
                 className={`hover:text-blue-400 transition-colors ${
@@ -47,6 +49,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               >
                 Resume
               </Link>
+              */}
             </div>
           </div>
         </nav>
@@ -62,7 +65,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 mb-4 md:mb-0">
-              © 2024 Jaehuiui Studio. All rights reserved.
+              © 2025 Jaehuiui Studio. Made with ❤️ in Seoul, Korea.
             </div>
             <div className="flex space-x-6">
               <a
@@ -74,7 +77,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/jaehuiui"
+                href="https://www.linkedin.com/in/jaehuiui/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -82,7 +85,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 LinkedIn
               </a>
               <a
-                href="mailto:contact@jaehuiui.com"
+                href="mailto:dev.jaehuiui@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Email
